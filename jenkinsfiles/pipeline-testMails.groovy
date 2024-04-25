@@ -19,6 +19,7 @@ pipeline {
         }  
         failure {
 
+            echo "testing mails"
             sendEmails(env.CLIENTE, env.JOB_NAME, env.BUILD_NUMBER, env.MAILS)
 
             echo 'Fallo.'
