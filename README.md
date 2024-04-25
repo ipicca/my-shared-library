@@ -32,7 +32,7 @@ pipeline {
 }
 ```
 
-### Functions
+## Functions
 
 Reusable functions are stored in the src directory. These functions can be imported and used in your Jenkinsfiles as needed.
 
