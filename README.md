@@ -56,5 +56,6 @@ pipeline {
 }
 ```
 
-###Contribution
+## Contribution
+
 Contributions to this shared library are welcome! If you have Jenkinsfiles or functions that you believe could benefit others, feel free to submit a pull request.
