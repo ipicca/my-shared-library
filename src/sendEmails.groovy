@@ -1,7 +1,7 @@
-def sendEmails(String cliente, String jobName, String buildNumber, String mails) {
-    emailext subject: "${cliente} ERROR - ${jobName}-${buildNumber}",
-              body: "<html><body><p style='color:red;'>El pipeline ${jobName} ha fallado. Revisar la consola de Jenkins para más detalles.</p></body></html>",
+def sendEmails(String CLIENTE, String JOB_NAME, String BUILD_NUMBER, String MAILS) {
+    emailext subject: "${CLIENTE} ERROR - ${JOB_NAME}-${BUILD_NUMBER}",
+              body: "<html><body><p style='color:red;'>El pipeline ${JOB_NAME} ha fallado. Revisar la consola de Jenkins para más detalles.</p></body></html>",
               mimeType: 'text/html',
-              to: "${mails}",
+              to: "${MAILS}",
               attachLog: true
 }
